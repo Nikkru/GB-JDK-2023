@@ -16,10 +16,13 @@ public class GameWindow extends JFrame {
         setTitle("TicTacToe");
         setResizable(false);
 
+        Map map = new Map();
+
         JPanel panBottom = new JPanel(new GridLayout(1, 2));
         panBottom.add(btnStart);
         panBottom.add(btnExit);
         add(panBottom, BorderLayout.SOUTH);
+        add(map);
 
         setVisible(true);
     }
